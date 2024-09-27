@@ -41,6 +41,7 @@
 .result__video {
     width: 712px;
     max-height: 386px;
+    object-fit: fill;
 }
 
 .result__video-container {
@@ -79,7 +80,7 @@
         color: rgba($color: #fff, $alpha: 0.7);
     }
 
-    &:active, &:focus {
+    &:active, &:focus-visible {
         outline: 1px solid #fff;
     }
 
@@ -101,7 +102,7 @@
         text-decoration: underline;
     }
 
-    &:focus {
+    &:focus-visible {
         outline: 1px solid #fff;
     }
 }
