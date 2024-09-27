@@ -9,4 +9,4 @@ The work involved honing the skills of working with
 -  creating fake checkboxes
 -  forms for text
 
-[Link to project.](https://github.com/Detrut/posmotri_v_okno)
+[Link to project.](https://github.com/Detrut/posmotri_v_okno.git)
