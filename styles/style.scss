@@ -2,7 +2,7 @@
     max-height: 800px;
     display: flex;
     justify-content: center;
-    align-items: end;
+    align-items: flex-end;
 }
 
 .visually-hidden {
@@ -32,7 +32,7 @@
 
 .content {
     display: flex;
-    margin: 134px 0;
+    margin: 144px 0 124px;
 }
 
 .result {
