@@ -38,8 +38,7 @@ f .button:active {
 }
 
 .result {
-  margin-top: 78px;
-  margin-right: 28px;
+  margin: 78px 28px 0 -4px;
 }
 
 .result__video {
