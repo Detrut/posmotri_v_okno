@@ -17,6 +17,7 @@
 .button {
     font-family: inherit;
     font-size: inherit;
+    font-weight: bold;
     color: inherit;
     background-color: transparent;
     border: 1px solid #fff;f
@@ -36,7 +37,7 @@
 
 .content {
     display: flex;
-    margin-top: 16px;
+    margin-top: 18px;
 }
 
 .result {
@@ -137,7 +138,7 @@ input[type="checkbox"]:checked + span {
 .search-form__submit-button {
     width: 194px;
     height: 34px;
-    margin: 18px 0 0 18px;
+    margin: 16px 0 0 18px;
 }
 
 .content__details .title {
