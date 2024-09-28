@@ -15,6 +15,11 @@
   } 
 
 .button {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+    border: 1px solid #fff;f
 
     &:active {
         background-color: #545050;
@@ -31,6 +36,7 @@
 
 .content {
     display: flex;
+    margin-top: 16px;
 }
 
 .result {
@@ -41,7 +47,7 @@
 .result__video {
     width: 712px;
     max-height: 386px;
-    object-fit: fill;
+    object-fit: cover;
 }
 
 .result__video-container {
@@ -69,6 +75,7 @@
     margin-right: 20px;
     border: none;
     background-color: transparent;
+    color: inherit;
     font-family: inherit;
     font-size: inherit;
     font-weight: inherit;
@@ -96,14 +103,15 @@
 
 .search-form__label {
     display: flex;
-    gap: 8px;
-
-    &:hover {
-        text-decoration: underline;
-    }
+    align-items: center;
+    gap: 6px;
 
     &:focus-visible {
         outline: 1px solid #fff;
+    }
+
+    &-text:hover {
+        text-decoration: underline;
     }
 }
 
@@ -129,12 +137,7 @@ input[type="checkbox"]:checked + span {
 .search-form__submit-button {
     width: 194px;
     height: 34px;
-    margin: 16px 0 0 12px;
-    background-color: transparent;
-    border: 1px solid #fff;
-    font-family: inherit;
-    font-size: inherit;
-    color: inherit;
+    margin: 18px 0 0 18px;
 }
 
 .content__details .title {
@@ -156,7 +159,7 @@ input[type="checkbox"]:checked + span {
     flex-direction: column;
     min-width: 394px;
     height: 312px;
-    overflow-x: hidden;
+    overflow-x: auto;
     gap: 34px;
 }
 
@@ -166,6 +169,10 @@ input[type="checkbox"]:checked + span {
     justify-content: space-between;
 
     &-title {
+        max-width: 198px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
         font-family: 'Oswald', sans-serif;
         font-size: 30px;
         font-weight: bold;
@@ -181,11 +188,17 @@ input[type="checkbox"]:checked + span {
     }
 
     &:focus {
+        outline: none;
+    }
+
+    &:focus-visible {
         outline: 1px solid #fff;
     }
 }
 
 .content__video-card-thumbnail{
+    object-fit: cover;
+    object-position: center;
     width: 194px;
     height: 104px;
 }
@@ -209,7 +222,5 @@ input[type="checkbox"]:checked + span {
 .more-button {
     width: 100%;
     height: 34px;
-    background-color: transparent;
-    border: 1px solid #fff;
-    color: #fff;
+    margin-bottom: 12px;
 }
