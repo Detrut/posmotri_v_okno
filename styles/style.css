@@ -34,11 +34,8 @@ f .button:active {
 
 .content {
   display: flex;
-  margin-top: 14px;
-}
-
-.result {
-  margin: 78px 28px 0 -4px;
+  align-items: end;
+  gap: 28px;
 }
 
 .result__video {
@@ -104,6 +101,10 @@ f .button:active {
   text-decoration: underline;
 }
 
+.search-form__label:has(input[type=checkbox]:focus-visible) {
+  outline: 1px solid #fff;
+}
+
 input[type=checkbox]:checked + span {
   padding: 2px;
   background-color: #fff;
@@ -123,7 +124,8 @@ input[type=checkbox]:checked + span {
 .search-form__submit-button {
   width: 194px;
   height: 34px;
-  margin: 16px 0 0 18px;
+  margin: 16px 0 0 20px;
+  padding-top: 4px;
 }
 
 .content__details .title {
@@ -141,10 +143,10 @@ input[type=checkbox]:checked + span {
 .content__list {
   position: relative;
   display: flex;
-  margin-top: 20px;
+  margin-top: 24px;
   flex-direction: column;
   min-width: 394px;
-  height: 312px;
+  height: 298px;
   overflow-x: auto;
   gap: 34px;
 }
@@ -202,5 +204,5 @@ input[type=checkbox]:checked + span {
 .more-button {
   width: 100%;
   height: 34px;
-  margin-bottom: 12px;
+  padding: 4px 0 0 12px;
 }
