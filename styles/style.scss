@@ -29,6 +29,10 @@
     &:focus {
         outline: 1px solid #fff;
     }
+
+    &:active {
+        background-color: #545050;
+    }
 }
 
 .content {
@@ -103,10 +107,10 @@
     &:focus-visible {
         outline: 1px solid #fff;
     }
+}
 
-    &-text:hover {
-        text-decoration: underline;
-    }
+.search-form__label:hover > .search-form__label-text {
+    text-decoration: underline;
 }
 
 .search-form__label:has(input[type="checkbox"]:focus-visible) {
@@ -166,6 +170,7 @@ input[type="checkbox"]:checked + span {
     color: #fff;
     display: flex;
     justify-content: space-between;
+    margin: 0 1px;
 
     &-title {
         max-width: 198px;

@@ -28,6 +28,9 @@ f .button:hover {
 .button:focus {
   outline: 1px solid #fff;
 }
+.button:active {
+  background-color: #545050;
+}
 
 .content {
   display: flex;
@@ -95,7 +98,8 @@ f .button:hover {
 .search-form__label:focus-visible {
   outline: 1px solid #fff;
 }
-.search-form__label-text:hover {
+
+.search-form__label:hover > .search-form__label-text {
   text-decoration: underline;
 }
 
@@ -153,6 +157,7 @@ input[type=checkbox]:checked + span {
   color: #fff;
   display: flex;
   justify-content: space-between;
+  margin: 0 1px;
 }
 .content__video-card-title {
   max-width: 198px;
